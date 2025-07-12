@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ChevronDown, Play, Laptop, FileSignature, CheckCircle, Instagram, Facebook, ShoppingCart, Lock, Rocket, Percent } from "lucide-react";
+import { ChevronDown, Play, Laptop, FileSignature, CheckCircle, Instagram, Facebook, ShoppingCart, Lock, Rocket, Percent, Users, Award, TrendingUp, Calculator, FileText } from "lucide-react";
 
 const AnimatedSection = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => {
   const ref = useRef(null);
@@ -305,6 +305,96 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-slate-800 mb-4">Quais são as atividades permitidas para MEI?</h3>
                   <p className="text-gray-600">
                     Lista completa das atividades econômicas permitidas para MEI e orientações sobre como escolher a correta.
+                  </p>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
+            
+            <AnimatedSection>
+              <Card className="bg-white border-gray-200 p-8 card-hover h-full">
+                <CardContent className="p-0 text-center">
+                  <motion.div
+                    className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <TrendingUp className="h-10 w-10 text-white" />
+                  </motion.div>
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">Quais são as vantagens de ser MEI?</h3>
+                  <p className="text-gray-600">
+                    Descubra todos os benefícios e vantagens que o regime MEI oferece para o seu negócio.
+                  </p>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
+            
+            <AnimatedSection>
+              <Card className="bg-white border-gray-200 p-8 card-hover h-full">
+                <CardContent className="p-0 text-center">
+                  <motion.div
+                    className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Calculator className="h-10 w-10 text-white" />
+                  </motion.div>
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">Como funciona a tributação do MEI?</h3>
+                  <p className="text-gray-600">
+                    Entenda o sistema tributário simplificado do MEI e como calcular seus impostos.
+                  </p>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
+            
+            <AnimatedSection>
+              <Card className="bg-white border-gray-200 p-8 card-hover h-full">
+                <CardContent className="p-0 text-center">
+                  <motion.div
+                    className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <FileText className="h-10 w-10 text-white" />
+                  </motion.div>
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">Como emitir nota fiscal sendo MEI?</h3>
+                  <p className="text-gray-600">
+                    Aprenda quando e como emitir nota fiscal corretamente sendo um MEI.
+                  </p>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
+            
+            <AnimatedSection>
+              <Card className="bg-white border-gray-200 p-8 card-hover h-full">
+                <CardContent className="p-0 text-center">
+                  <motion.div
+                    className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Users className="h-10 w-10 text-white" />
+                  </motion.div>
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">Quais são as obrigações do MEI?</h3>
+                  <p className="text-gray-600">
+                    Conheça todas as obrigações e responsabilidades que você deve cumprir como MEI.
+                  </p>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
+            
+            <AnimatedSection>
+              <Card className="bg-white border-gray-200 p-8 card-hover h-full">
+                <CardContent className="p-0 text-center">
+                  <motion.div
+                    className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <Award className="h-10 w-10 text-white" />
+                  </motion.div>
+                  <h3 className="text-xl font-bold text-slate-800 mb-4">Conquiste o sucesso como MEI: 7 dicas infalíveis!</h3>
+                  <p className="text-gray-600">
+                    Estratégias e dicas práticas para fazer seu negócio MEI prosperar e alcançar o sucesso.
                   </p>
                 </CardContent>
               </Card>
