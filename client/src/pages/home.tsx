@@ -75,6 +75,8 @@ const FloatingElements = () => (
   </div>
 );
 
+
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-900 text-white font-sans overflow-x-hidden">
@@ -140,7 +142,50 @@ export default function Home() {
       </section>
 
       {/* Video Section */}
-      <section className="py-20 bg-slate-800 relative">
+      <section className="py-20 bg-slate-800 relative overflow-hidden">
+        {/* Elementos flutuantes para a seção de vídeo */}
+        <motion.div
+          className="absolute top-10 left-10 w-3 h-3 bg-cyan-400 rounded-full opacity-25"
+          animate={{
+            y: [0, -15, 0],
+            x: [0, 8, 0],
+          }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+        />
+        <motion.div
+          className="absolute bottom-20 right-16 w-4 h-4 bg-cyan-300 opacity-20"
+          style={{
+            clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)"
+          }}
+          animate={{
+            y: [0, -20, 0],
+            rotate: [0, 180, 360],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+        />
+        <motion.div
+          className="absolute top-32 right-1/4 w-2 h-2 bg-cyan-500 rounded-full opacity-30"
+          animate={{
+            y: [0, -12, 0],
+            x: [0, -6, 0],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3
+          }}
+        />
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="text-center mb-12">
@@ -159,20 +204,13 @@ export default function Home() {
                 <CardContent className="p-0">
                   <div className="aspect-video relative">
                     <iframe
-                      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                      src="https://www.youtube.com/embed/10fJRAj6gi4"
                       title="MEI O guia completo para Formalização do seu negócio"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
-                      className="w-full h-full"
+                      className="w-full h-full rounded-lg"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-80">
-                      <div className="text-center">
-                        <Play className="h-16 w-16 text-cyan-400 mb-4 mx-auto" />
-                        <p className="text-xl font-semibold">O GUIA COMPLETO</p>
-                        <p className="text-gray-400">Clique para assistir</p>
-                      </div>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -182,7 +220,52 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 bg-slate-900 relative">
+      <section className="py-20 bg-slate-900 relative overflow-hidden">
+        {/* Elementos flutuantes para a seção de preços */}
+        <motion.div
+          className="absolute top-16 left-20 w-5 h-5 bg-cyan-300 opacity-18"
+          style={{
+            clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)"
+          }}
+          animate={{
+            y: [0, -18, 0],
+            rotate: [0, 120, 240, 360],
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1.5
+          }}
+        />
+        <motion.div
+          className="absolute bottom-24 right-20 w-6 h-0.5 bg-cyan-400 opacity-25"
+          animate={{
+            y: [0, -14, 0],
+            x: [0, 12, 0],
+            rotate: [0, 90, 180, 270, 360],
+          }}
+          transition={{
+            duration: 9,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2.8
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-8 w-3 h-3 bg-cyan-500 rounded-full opacity-22"
+          animate={{
+            y: [0, -16, 0],
+            x: [0, 10, 0],
+            scale: [1, 1.3, 1],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 0.8
+          }}
+        />
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <AnimatedSection>
@@ -224,11 +307,12 @@ export default function Home() {
                       Economia de 35%
                     </motion.div>
                   </div>
-                  
+                  <a href="https://pay.hotmart.com/V84065811W?checkoutMode=10">
                   <Button className="btn-primary w-full py-6 text-xl font-bold mb-6">
                     <ShoppingCart className="mr-3 h-5 w-5" />
                     Adquirir
                   </Button>
+                  </a>
                   
                   <div className="flex items-center justify-center text-sm text-gray-400">
                     <Lock className="mr-2 h-4 w-4" />
@@ -242,7 +326,81 @@ export default function Home() {
       </section>
 
       {/* Content Section */}
-      <section className="py-20 bg-gray-100 text-gray-800">
+      <section className="py-20 bg-gray-100 text-gray-800 relative overflow-hidden">
+        {/* Elementos flutuantes para a seção de conteúdo */}
+        <motion.div
+          className="absolute top-20 left-16 w-4 h-4 bg-cyan-600 opacity-15"
+          style={{
+            clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"
+          }}
+          animate={{
+            y: [0, -20, 0],
+            rotate: [0, 180, 360],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+        />
+        <motion.div
+          className="absolute bottom-32 right-24 w-5 h-5 bg-cyan-500 opacity-12"
+          style={{
+            clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)"
+          }}
+          animate={{
+            y: [0, -22, 0],
+            x: [0, -8, 0],
+            scale: [1, 1.4, 1],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3
+          }}
+        />
+        <motion.div
+          className="absolute top-1/2 right-12 w-3 h-3 bg-cyan-400 rounded-full opacity-18"
+          animate={{
+            y: [0, -16, 0],
+            x: [0, 12, 0],
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2.2
+          }}
+        />
+        <motion.div
+          className="absolute bottom-16 left-1/4 w-6 h-0.5 bg-cyan-700 opacity-20"
+          animate={{
+            y: [0, -14, 0],
+            rotate: [0, 45, 90, 135, 180, 225, 270, 315, 360],
+          }}
+          transition={{
+            duration: 11,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 4
+          }}
+        />
+        <motion.div
+          className="absolute top-40 left-1/2 w-2 h-2 bg-cyan-600 rounded-full opacity-25"
+          animate={{
+            y: [0, -12, 0],
+            x: [0, -10, 0],
+            scale: [1, 1.5, 1],
+          }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1.8
+          }}
+        />
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="text-center mb-16">
@@ -404,7 +562,50 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-800 py-12">
+      <footer className="bg-slate-800 py-12 relative overflow-hidden">
+        {/* Elementos flutuantes para o footer */}
+        <motion.div
+          className="absolute top-8 left-12 w-3 h-3 bg-cyan-400 rounded-full opacity-20"
+          animate={{
+            y: [0, -12, 0],
+            x: [0, 8, 0],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+        />
+        <motion.div
+          className="absolute bottom-6 right-16 w-4 h-4 bg-cyan-300 opacity-15"
+          style={{
+            clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)"
+          }}
+          animate={{
+            y: [0, -10, 0],
+            rotate: [0, 90, 180, 270, 360],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+        />
+        <motion.div
+          className="absolute top-4 right-1/3 w-2 h-6 bg-cyan-500 opacity-18"
+          animate={{
+            rotate: [0, 45, 90, 135, 180, 225, 270, 315, 360],
+            scale: [1, 1.2, 1],
+          }}
+          transition={{
+            duration: 9,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 3
+          }}
+        />
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="text-center">
