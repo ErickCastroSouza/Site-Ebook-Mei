@@ -123,10 +123,12 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
               >
+                <a href="https://pay.hotmart.com/V84065811W?checkoutMode=10">
                 <Button className="btn-primary px-12 py-6 text-xl font-semibold">
                   <Rocket className="mr-3 h-5 w-5" />
                   Torne-se um MEI de sucesso
                 </Button>
+                </a>
               </motion.div>
             </AnimatedSection>
           </div>
@@ -614,7 +616,7 @@ export default function Home() {
               </h3>
               <div className="flex justify-center space-x-6">
                 <motion.a
-                  href="#"
+                  href="https://www.instagram.com/goncalvesassessorias/"
                   className="text-3xl text-gray-400 hover:text-cyan-400 transition-colors duration-300"
                   whileHover={{ scale: 1.2, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
@@ -622,7 +624,7 @@ export default function Home() {
                   <Instagram />
                 </motion.a>
                 <motion.a
-                  href="#"
+                  href="https://www.facebook.com/people/Gon%C3%A7alves-Assessoria/100094599639932/"
                   className="text-3xl text-gray-400 hover:text-cyan-400 transition-colors duration-300"
                   whileHover={{ scale: 1.2, rotate: -5 }}
                   whileTap={{ scale: 0.9 }}
